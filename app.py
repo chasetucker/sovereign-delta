@@ -24,6 +24,10 @@ ax.plot(months, designed_future, color="#4A90E2", linewidth=3,
 
 ax.set_xlabel("Time (Months)", fontweight="bold")
 ax.set_ylabel("Outcome Level (Health / Wealth / Energy / Harmony)", fontweight="bold")
+
+# 👇 This is the new line that sets the lower y-limit to 80
+ax.set_ylim(bottom=80)
+
 ax.grid(alpha=0.2)
 ax.legend()
 st.pyplot(fig)
